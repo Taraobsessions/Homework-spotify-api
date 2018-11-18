@@ -6,7 +6,7 @@
   "author": "Taraobsessions <tarakimberly93@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^3.0.2",
