@@ -5,6 +5,9 @@
   "repository": "git@github.com:Taraobsessions/Homework-spotify-api.git",
   "author": "Taraobsessions <tarakimberly93@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "index.js"
+  },
   "dependencies": {
     "bcrypt": "^3.0.2",
     "express": "4.16.2",
