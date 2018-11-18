@@ -3,13 +3,9 @@ const sequelize = require('../db')
 const Playlist = require('../playlists/model')
 
 const Songs = sequelize.define('songs', {
-  id: {
-    type: Sequelize.SERIAL,
-    field: 'id',
-    allowNull: false
-  },
+ 
   title: {
-    type: Sequelize.STRING,
+    type: Sequelize.STRING,  
     field: 'title'
   },
   artistName: {
@@ -26,5 +22,4 @@ const Songs = sequelize.define('songs', {
   }
 })
 
-Songs.belongsTo(Playlist)
 module.exports = Songs

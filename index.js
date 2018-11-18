@@ -1,4 +1,12 @@
 const express = require('express')
 const app = express()
+const playlistRouter = require('./playlists/routes')
+const songsRouter = require('./songs/routes')
+const bodyParser = require('body-parser')
+const usersRouter = require('./users/routes')
 
-app.listen(4001, () => console.log('Express API listening on port 4001'))
+
+app
+.use(bodyParser.json())
+.use(playlistRouter, songsRouter, usersRouter)
+.listen(4001, () => console.log('Express API listening on port 4001'))
